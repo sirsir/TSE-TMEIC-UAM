@@ -1,0 +1,553 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MESPdLib
+</name>
+</assembly>
+<members>
+<member name="F:MESPdLib.MaterialInfo.MaterialComponentNo">
+	<summary>MaterialComponentNo</summary>
+</member><member name="F:MESPdLib.MaterialInfo.MaterialId">
+	<summary>MaterialId</summary>
+</member><member name="F:MESPdLib.MaterialInfo.MaterialName">
+	<summary>MaterialName</summary>
+</member><member name="F:MESPdLib.MaterialInfo.MaterialUnit">
+	<summary>MaterialUnit</summary>
+</member><member name="F:MESPdLib.MaterialInfo.MaterialQtyPlan">
+	<summary>MaterialQtyPlan</summary>
+</member><member name="F:MESPdLib.MaterialInfo.MaterialQty">
+	<summary>MaterialQty</summary>
+</member><member name="T:MESPdLib.MaterialInfo">
+	<summary>
+ Material information
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.DisplayOrderUtils.SelectOrder``1(System.Collections.Generic.List{``0},System.Int32)">
+	<summary>
+	</summary>
+	<typeparam name="t"></typeparam>
+	<param name="value"></param>
+	<param name="order"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.DisplayOrderUtils.FirstOrder``1(System.Collections.Generic.List{``0})">
+	<summary>
+	</summary>
+	<typeparam name="t"></typeparam>
+	<param name="value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.DisplayOrderUtils.LastOrder``1(System.Collections.Generic.List{``0})">
+	<summary>
+	</summary>
+	<typeparam name="t"></typeparam>
+	<param name="value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.DisplayOrderUtils.NextOrder``1(System.Collections.Generic.List{``0},System.Int32)">
+	<summary>
+	</summary>
+	<typeparam name="t"></typeparam>
+	<param name="value"></param>
+	<param name="nowOrder"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.DisplayOrderUtils.PrevOrder``1(System.Collections.Generic.List{``0},System.Int32)">
+	<summary>
+	</summary>
+	<typeparam name="t"></typeparam>
+	<param name="value"></param>
+	<param name="nowOrder"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:MESPdLib.DisplayOrderUtils">
+	<summary>
+ DisplayOrder Utility
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.ProcessProductStatus.NameList">
+	<summary>
+ Status name list
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.ProcessProductStatus.GetName(System.Int32)">
+	<summary>
+ Get Status name
+ </summary>
+	<param name="status"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:MESPdLib.ProcessProductStatus">
+	<summary>
+ Process product status
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProductService.GetSerialNoInfo(System.String,System.Int32,System.String)">
+	<summary>
+	</summary>
+	<param name="productPlanNo"></param>
+	<param name="processComponentNo"></param>
+	<param name="serialNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProductService.CreateSerialNo(System.String,System.Int32,System.String)">
+	<summary>
+	</summary>
+	<param name="productPlanNo"></param>
+	<param name="processComponentNo"></param>
+	<param name="serialNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProductService.ExistsPreviousResult(System.String,System.Int32,System.String)">
+	<summary>
+	</summary>
+	<param name="productPlanNo"></param>
+	<param name="processComponentNo"></param>
+	<param name="serialNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProductService.WorkStart(System.String,System.Int32,System.String)">
+	<summary>
+	</summary>
+	<param name="productPlanNo"></param>
+	<param name="processComponentNo"></param>
+	<param name="serialNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProductService.WorkEnd(System.String,System.Int32,System.String,MESPdLib.UserInfo)">
+	<summary>
+	</summary>
+	<param name="productPlanNo"></param>
+	<param name="processComponentNo"></param>
+	<param name="serialNo"></param>
+	<param name="user"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProductService.MaterialRegister(System.String,System.Int32,System.String,MESPdLib.MaterialInfo)">
+	<summary>
+	</summary>
+	<param name="productPlanNo"></param>
+	<param name="processComponentNo"></param>
+	<param name="serialNo"></param>
+	<param name="material"></param>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProductService.SpecRegister(System.String,System.Int32,System.String,System.Collections.Generic.List{MESPdLib.SpecInfo})">
+	<summary>
+	</summary>
+	<param name="productPlanNo"></param>
+	<param name="processComponentNo"></param>
+	<param name="serialNo"></param>
+	<param name="spec"></param>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProductService.InterimProductId(System.String)">
+	<summary>
+	</summary>
+	<param name="serialNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:MESPdLib.Service.ProductService">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:MESPdLib.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorCanNotFinish">
+	<summary>
+  It could not be finished に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorCanNotProcessStart">
+	<summary>
+  It could not be started に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorCanNotStart">
+	<summary>
+  It could not be started に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorFinished">
+	<summary>
+  It has been finished に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorLogin">
+	<summary>
+  Login error に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorMaterialIncorrect">
+	<summary>
+  Material is incorrect に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorNoResultsPreviousProcess">
+	<summary>
+  No results of previous process. Do you want to continue? に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorNotInputPassword">
+	<summary>
+  Password is required に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorNotInputUserId">
+	<summary>
+  User ID is required に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorNotStart">
+	<summary>
+  It does not start に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorProcessStarted">
+	<summary>
+  It has been started に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorRegister">
+	<summary>
+  Registration error に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorSerialNoCreation">
+	<summary>
+  Serial No creation error に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorSerialRequired">
+	<summary>
+  Please input the serial No に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ErrorStarted">
+	<summary>
+  It has been started に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.LogOutConfirm">
+	<summary>
+  Do you want to log out? に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.NoneData">
+	<summary>
+  None data に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ProcessProductStatusComplete">
+	<summary>
+  Finish に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ProcessProductStatusNone">
+	<summary>
+  ― に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ProcessProductStatusStart">
+	<summary>
+  Working に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ProcessStatusComplete">
+	<summary>
+  Finish に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ProcessStatusNone">
+	<summary>
+  ― に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="P:MESPdLib.My.Resources.Resources.ProcessStatusStart">
+	<summary>
+  Start に類似しているローカライズされた文字列を検索します。
+</summary>
+</member><member name="T:MESPdLib.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="F:MESPdLib.AppData.RootUrl">
+	<summary>Root</summary>
+</member><member name="F:MESPdLib.AppData.User">
+	<summary>User</summary>
+</member><member name="F:MESPdLib.AppData.Process">
+	<summary>Process</summary>
+</member><member name="F:MESPdLib.AppData.SerialNoInfo">
+	<summary>SerialNo Info</summary>
+</member><member name="F:MESPdLib.AppData.SpecProcesses">
+	<summary>Spec Process</summary>
+</member><member name="F:MESPdLib.AppData.NowSpecType">
+	<summary>NowSpecType</summary>
+</member><member name="F:MESPdLib.AppData.NowDisplayOrder">
+	<summary>NowDisplayOrder</summary>
+</member><member name="M:MESPdLib.AppData.IsMaterialInputCompletion">
+	<summary>
+ Check the already input all material
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.AppData.IsSpecProcessInputCompletion">
+	<summary>
+ Check the already input all spec process
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.AppData.IsSpecProductInputCompletion">
+	<summary>
+ Check the already input all spec product
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.AppData.SpecInfo">
+	<summary>
+ Get SpecInfo
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.HttpUtils.GetRequest(System.String)">
+	<summary>
+	</summary>
+	<param name="url"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.HttpUtils.GetRequest(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+	<summary>
+	</summary>
+	<param name="url"></param>
+	<param name="params"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.HttpUtils.URLEncode(System.String,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="StringToEncode"></param>
+	<param name="UsePlusRatherThanHexForSpace"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:MESPdLib.HttpUtils">
+	<summary>
+ HTTP Utility
+ </summary>
+	<remarks></remarks>
+</member><member name="F:MESPdLib.SerialNoInfo.SerialNo">
+	<summary>SerialNo</summary>
+</member><member name="F:MESPdLib.SerialNoInfo.Status">
+	<summary>Work Status</summary>
+</member><member name="F:MESPdLib.SerialNoInfo.Materials">
+	<summary>Material</summary>
+</member><member name="F:MESPdLib.SerialNoInfo.SpecProducts">
+	<summary>SpecProduct</summary>
+</member><member name="T:MESPdLib.SerialNoInfo">
+	<summary>
+ SerialNo information
+ </summary>
+	<remarks></remarks>
+</member><member name="F:MESPdLib.SpecInfo.SpecComponentNo">
+	<summary>SpecComponentNo</summary>
+</member><member name="F:MESPdLib.SpecInfo.SpecId">
+	<summary>SpecId</summary>
+</member><member name="F:MESPdLib.SpecInfo.SpecName">
+	<summary>SpecName</summary>
+</member><member name="F:MESPdLib.SpecInfo.SpecAttributeId">
+	<summary>SpecAttributeId</summary>
+</member><member name="F:MESPdLib.SpecInfo.SpecAttributeName">
+	<summary>SpecAttributeName</summary>
+</member><member name="F:MESPdLib.SpecInfo.SpecParts01">
+	<summary>SpecParts01</summary>
+</member><member name="F:MESPdLib.SpecInfo.SpecParts02">
+	<summary>SpecParts02</summary>
+</member><member name="F:MESPdLib.SpecInfo.SpecParts03">
+	<summary>SpecParts03</summary>
+</member><member name="F:MESPdLib.SpecInfo.SpecParts04">
+	<summary>SpecParts04</summary>
+</member><member name="F:MESPdLib.SpecInfo.SpecParts05">
+	<summary>SpecParts05</summary>
+</member><member name="F:MESPdLib.SpecInfo.SpecParts06">
+	<summary>SpecParts06</summary>
+</member><member name="F:MESPdLib.SpecInfo.SpecParts07">
+	<summary>SpecParts07</summary>
+</member><member name="F:MESPdLib.SpecInfo.SpecParts08">
+	<summary>SpecParts08</summary>
+</member><member name="F:MESPdLib.SpecInfo.SpecParts09">
+	<summary>SpecParts09</summary>
+</member><member name="F:MESPdLib.SpecInfo.SpecParts10">
+	<summary>SpecParts10</summary>
+</member><member name="F:MESPdLib.SpecInfo.InputValue">
+	<summary>InputValue</summary>
+</member><member name="M:MESPdLib.SpecInfo.GetSpecParts">
+	<summary>All SpecParts</summary>
+</member><member name="T:MESPdLib.SpecInfo">
+	<summary>
+ Spec information
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.UserService.IsPasswordRequired">
+	<summary>
+ Get Password Required Setting
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.UserService.IsAuth(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="userCode"></param>
+	<param name="password"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.UserService.GetUserInfo(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="userCode"></param>
+	<param name="password"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:MESPdLib.Service.UserService">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:MESPdLib.SpecAttributeId">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProcessService.GetProcessInfo(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="productPlanNo"></param>
+	<param name="processComponentNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProcessService.GetAllProcessHandy">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProcessService.GetProcessInfoByName(System.String)">
+	<summary>
+	</summary>
+	<param name="processName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProcessService.GetProcessInfoByBarcode(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="barcode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProcessService.GetSpecInfo(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="productPlanNo"></param>
+	<param name="processComponentNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProcessService.ProcessWorkStart(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="productPlanNo"></param>
+	<param name="processComponentNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProcessService.ProcessWorkFinish(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="productPlanNo"></param>
+	<param name="processComponentNo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.Service.ProcessService.SpecRegister(System.String,System.Int32,System.Collections.Generic.List{MESPdLib.SpecInfo})">
+	<summary>
+	</summary>
+	<param name="productPlanNo"></param>
+	<param name="processComponentNo"></param>
+	<param name="spec"></param>
+	<remarks></remarks>
+</member><member name="T:MESPdLib.Service.ProcessService">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.BooleanUtils.Parse(System.String)">
+	<summary>
+	</summary>
+	<param name="value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:MESPdLib.BooleanUtils">
+	<summary>
+ Boolean utility
+ </summary>
+	<remarks></remarks>
+</member><member name="F:MESPdLib.DisplayOrder.DisplayOrder">
+	<summary>DisplayOrder</summary>
+</member><member name="M:MESPdLib.ProcessStatus.NameList">
+	<summary>
+ Status name list
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.ProcessStatus.GetName(System.Int32)">
+	<summary>
+ Get Status name
+ </summary>
+	<param name="status"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:MESPdLib.ProcessStatus">
+	<summary>
+ Process status
+ </summary>
+	<remarks></remarks>
+</member><member name="F:MESPdLib.ProcessInfo.ProductPlanNo">
+	<summary>ProductPlanNo</summary>
+</member><member name="F:MESPdLib.ProcessInfo.ProductName">
+	<summary>ProductName</summary>
+</member><member name="F:MESPdLib.ProcessInfo.ProcessComponentNo">
+	<summary>ProcessComponentNo</summary>
+</member><member name="F:MESPdLib.ProcessInfo.ProcessName">
+	<summary>ProcessName</summary>
+</member><member name="F:MESPdLib.ProcessInfo.Status">
+	<summary>ProcessStatus</summary>
+</member><member name="F:MESPdLib.ProcessInfo.PlanQty">
+	<summary>PlanQty</summary>
+</member><member name="F:MESPdLib.ProcessInfo.ResultQty">
+	<summary>ResultQty</summary>
+</member><member name="F:MESPdLib.ProcessInfo.SerialNo">
+	<summary>SerialNo</summary>
+</member><member name="F:MESPdLib.ProcessInfo.barcode">
+	<summary>Barcode</summary>
+</member><member name="T:MESPdLib.ProcessInfo">
+	<summary>
+ Process information
+ </summary>
+	<remarks></remarks>
+</member><member name="F:MESPdLib.ProductInfo.SerialNo">
+	<summary>SerialNo</summary>
+</member><member name="F:MESPdLib.ProductInfo.Revision">
+	<summary>Revision</summary>
+</member><member name="F:MESPdLib.ProductInfo.Status">
+	<summary>ProductStatus</summary>
+</member><member name="T:MESPdLib.ProductInfo">
+	<summary>
+ Product information
+ </summary>
+	<remarks></remarks>
+</member><member name="F:MESPdLib.UserInfo.UserId">
+	<summary>UserId</summary>
+</member><member name="F:MESPdLib.UserInfo.UserName">
+	<summary>UserName</summary>
+</member><member name="T:MESPdLib.UserInfo">
+	<summary>
+ User information
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.NumberUtils.Parse(System.String)">
+	<summary>
+ A string representation of a number, same to convert to an equivalent 32-bit signed integer.
+ </summary>
+	<param name="val"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MESPdLib.NumberUtils.IsNumber(System.String)">
+	<summary>
+ A string representation of a number, same to convert to an equivalent 32-bit signed integer.
+ </summary>
+	<param name="val"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:MESPdLib.NumberUtils">
+	<summary>
+ Number Utility
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
